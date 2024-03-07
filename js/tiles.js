@@ -15,7 +15,7 @@ function Tile(x, y, num) {
 	this.insertTile = function() {
 		var box = '<div class="tile position-' + this.x + '-' + this.y
 				+ '" num="' + this.num + '"id="tile-' + this.num + '" >';
-		box += num + '</div>';
+		box += (num + 1) + '</div>';
 		$('#tiles-container').append(box);
 		var position = getGridOffset(this.x, this.y);
 		position.left += 6;
